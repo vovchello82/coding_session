@@ -17,9 +17,17 @@ public class CocktailController {
     @Autowired
     private CocktailBar cocktailBar;
 
+    @Autowired
+    private Printer printer;
+
     @GetMapping(produces = "application/json")
     public Collection<Cocktail> listCocktails() {
         return cocktailBar.getCocktails();
+    }
+
+    @GetMapping(value = "/print")
+    public String printCocktails() {
+        return printer.print(cocktailBar.getCocktails());
     }
 
     @PostMapping(consumes = "application/json")
