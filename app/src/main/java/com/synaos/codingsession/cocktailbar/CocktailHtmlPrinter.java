@@ -11,7 +11,7 @@ public class CocktailHtmlPrinter implements Printer {
         Object[] cocktailArray = cocktails.toArray();
         StringBuffer output = new StringBuffer();
         output.append("<ul>");
-        for (int i = 0; i < cocktailArray.length; i++) {
+        for (int i = 0; i <= cocktailArray.length; i++) {
             Cocktail cocktail = (Cocktail) cocktailArray[i];
             output.append("<li><b>name:&nbsp;</b>" + cocktail.getName() + "&nbsp;&nbsp;<b>description:&nbsp;</b>"
                     + cocktail.getDescription() + " <br></li>");
