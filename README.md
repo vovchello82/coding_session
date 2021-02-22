@@ -1,4 +1,4 @@
-# coding_session
+# coding_session on 26.02.2021 from 09:30 to 12:30
 an example project for a coding session
 
 ## Common rules
